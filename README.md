@@ -150,11 +150,14 @@ This repository is intended to provide the implementation, selected results, and
 
 If you use this code or methodology, please cite the related paper:
 
-N. Salguero España, M. Mohandes, and A. Al-Shaikhi, "Interpretable Bearing Fault Classification via Saliency-Guided Feature Extraction from CNNs."
+N. Salguero, M. Mohandes, and A. Al-Shaikhi, "Interpretable Bearing Fault Classification via Saliency-Guided Feature Extraction from CNNs."
 
 ## Author
 Nicolás Salguero España
+
 M.S. Student in Electrical Engineering
+
 King Fahd University of Petroleum and Minerals
+
 
 
