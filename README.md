@@ -33,22 +33,29 @@ This project addresses that limitation by connecting CNN-based classification wi
 
 The general workflow is:
 
-1\. \*\*Signal segmentation\*\*  
-&#x20;  Vibration signals are divided into fixed-length windows using a leakage-safe splitting strategy.
-2\. \*\*Time-frequency image generation\*\*  
-&#x20;  Each segment is transformed into STFT and CWT representations.
-3\. \*\*CNN training\*\*  
-&#x20;  Lightweight CNN models are trained for four-class bearing fault classification.
-4\. \*\*Saliency analysis\*\*  
-&#x20;  Grad-CAM and Grad-CAM++ are used to identify the time-frequency regions that contribute to the CNN decisions.
-5\. \*\*Robustness and faithfulness evaluation\*\*  
-&#x20;  Saliency maps are evaluated using deletion/insertion curves, adversarial perturbations, and stability metrics.
-6\. \*\*Frequency band extraction\*\*  
-&#x20;  Class-wise saliency maps are aggregated to obtain frequency saliency curves. A threshold is applied to select the most relevant frequency bands.
-7\. \*\*Interpretable feature extraction\*\*  
-&#x20;  Statistical features are extracted from the selected frequency bands.
-8\. \*\*Logistic regression classification\*\*  
-&#x20;  A transparent linear classifier is trained using the saliency-derived features.
+1. **Signal segmentation**
+Vibration signals are divided into fixed-length windows using a leakage-safe splitting strategy.
+
+2. **Time-frequency image generation**  
+Each segment is transformed into STFT and CWT representations.
+
+3. **CNN training**  
+Lightweight CNN models are trained for four-class bearing fault classification.
+
+4. **Saliency analysis**  
+Grad-CAM and Grad-CAM++ are used to identify the time-frequency regions that contribute to the CNN decisions.
+
+5. **Robustness and faithfulness evaluation**  
+Saliency maps are evaluated using deletion/insertion curves, adversarial perturbations, and stability metrics.
+
+6. **Frequency band extraction**  
+Class-wise saliency maps are aggregated to obtain frequency saliency curves. A threshold is applied to select the most relevant frequency bands.
+
+7. **Interpretable feature extraction**  
+Statistical features are extracted from the selected frequency bands.
+
+8. **Logistic regression classification**  
+A transparent linear classifier is trained using the saliency-derived features.
 
 ## Dataset
 
@@ -68,8 +75,6 @@ The raw dataset is not included in this repository due to size and licensing con
 Two time-frequency representations are considered:
 
 | Representation | Description |
-
-|---|---|
 
 | STFT | Short-Time Fourier Transform spectrograms |
 
@@ -144,6 +149,7 @@ This repository is intended to provide the implementation, selected results, and
 ## Citation
 
 If you use this code or methodology, please cite the related paper:
+
 N. Salguero España, M. Mohandes, and A. Al-Shaikhi, "Interpretable Bearing Fault Classification via Saliency-Guided Feature Extraction from CNNs."
 
 ## Author
