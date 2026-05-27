@@ -1,0 +1,112 @@
+# =========================================================
+# Raw datasets and generated data
+# =========================================================
+data/
+raw_data/
+datasets/
+dataset/
+CWRU/
+cwru/
+BearingDataCenter/
+generated_data/
+processed_data/
+
+# Large signal/data files
+*.mat
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.csv
+*.xlsx
+*.xls
+
+# =========================================================
+# Generated time-frequency images
+# =========================================================
+stft_images/
+cwt_images/
+tf_images/
+spectrograms/
+scalograms/
+generated_images/
+image_dataset/
+
+# =========================================================
+# Grad-CAM / saliency intermediate outputs
+# =========================================================
+gradcam_outputs/
+gradcampp_outputs/
+saliency_maps/
+explainability_outputs/
+adversarial_outputs/
+feature_tables/
+
+# =========================================================
+# Model checkpoints and trained networks
+# =========================================================
+models/
+trained_models/
+checkpoints/
+weights/
+runs/
+wandb/
+
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+
+# =========================================================
+# Intermediate outputs
+# =========================================================
+outputs/
+intermediate/
+temp/
+tmp/
+cache/
+logs/
+
+# Keep selected final results
+# results/ is NOT ignored on purpose
+
+# =========================================================
+# Python and Jupyter
+# =========================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+.venv/
+venv/
+env/
+ENV/
+
+# =========================================================
+# IDE/editor files
+# =========================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================================================
+# Operating system files
+# =========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# Local configuration and secrets
+# =========================================================
+.env
+*.key
+*.pem
+config_local.*
+local_paths.*
